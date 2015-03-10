@@ -1,0 +1,51 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+    background-color:#CCCCCC;
+  color: #003366;
+}
+
+.jumbotron .container{
+  color:white;
+  padding-left:4%;
+}
+
+.jumbotron .container h1{
+  text-shadow: 3px 3px grey;
+}
+
+.jumbotron{
+  background:url(../images/fleet_gwb.jpg) 100px -250px;
+  background-size:95%;
+  background-repeat:no-repeat;
+  margin-left:-100px;
+  height:630px;
+  padding:80px;
+  /*background-color:#787878;*/
+}
+
+
+.btn-default{
+  background:none;
+  color:white;
+ 
+}
+.glyphicon{
+  font-size:140px;
+  text-align:center;
+  display:inherit;
+}
+
+h2{
+  text-align:center;
+
+}
+
+#see-more{
+  text-align:center;
+  padding-top:200px;
+}
+
+p{
+  text-align:center;
+}
