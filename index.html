@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>Demarest Volunteer Ambulance Corps</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,25 +21,6 @@
 
   <body>
 
-    <!--<div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>-->
-		  
 	<div class="navbar-wrapper">
       <div class="container">
 
@@ -58,10 +39,8 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
-                <li><a href="about_us.html#roster">Members</a></li>
-                <li><a href="#contact">History</a></li>
-                <li><a href="#contact">Photo Gallery</a></li>
-                <li><a href="#contact">Join!</a></li>
+                <li><a href="photo_gallery.html">Photo Gallery</a></li>
+                <li><a href="join.html">Join!</a></li>
 				<li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Neighboring Corps<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -75,10 +54,10 @@
                     <li><a href="http://www.demarestnj.net/Police.php">Demarest Police Department</a></li>
                   </ul>
                 </li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a></li>
               
 			  </ul>
-            </div>
+            </div> <!--navbar collaps-->
 			
           </div>
         </nav>
@@ -92,9 +71,38 @@
             <p class="lead">
             </p>
           </div>
-    <footer>
+		  
+	    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+        </div>
+		
+        <div class="modal-body">
+			<form>
+			  <div class="form-group">
+				<label for="recipient-name" class="control-label">Recipient:</label>
+				<input type="text" class="form-control" id="recipient-name">
+			  </div>
+			  <div class="form-group">
+				<label for="message-text" class="control-label">Message:</label>
+				<textarea class="form-control" id="message-text"></textarea>
+			  </div>
+			</form>
+	<!-- TODO: Make it so Send actually does something other than dismiss the modal -->
+			<button type="button" class="btn btn-default" data-dismiss="modal"> Cancel </button>
+			<button type="button" class="btn btn-primary" data-dismiss="modal"> Send </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  <!-- Contact us Modal End -->	  
+    <!--<footer>
 		<p>&copy; Demarest Volunteer Ambulance Corps 2015</p>
-	</footer>
+	</footer>-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
