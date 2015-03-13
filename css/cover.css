@@ -172,3 +172,9 @@ body {
 .modal-title{
 	color:#333;
 }
+
+label{
+	color:#333;
+	text-shadow:none;
+	display:inherit;
+}
